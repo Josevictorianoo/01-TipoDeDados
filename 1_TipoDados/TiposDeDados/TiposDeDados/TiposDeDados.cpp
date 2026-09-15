@@ -59,6 +59,10 @@ int main()
 	int horas = 0;
 	int minutos = 0;
 
+	cout << endl << endl;
+
+
+
 	cout << "Digite seu nome: ";
 	cin >> nome;
 	cout << "Digite sua idade: ";
@@ -70,9 +74,57 @@ int main()
 	cout << "Sua idade em horas e: " << horas << endl;
 	cout << "Sua idade em minutos e: " << minutos << endl;
 
+	cout << endl << endl;
+
+	cout << "Qualquer tecla para continuar...";
+	system("pause"); // somente no Windows
+	system("cls");
+
+	cout << "\nExercicio 2 - Conversao de Temperatura\n";
+	cout << "======================================\n";
+	double celsius = 0.0;
+
+	cout << "Digite a temperatura em Celsius: ";
+	cin >> celsius;
+
+	double fahrenheit = (celsius * 1.8) + 32.0;
+	double kelvin = celsius + 273.15;
+
+	cout.precision(2);
+	cout << fixed;
+
+	cout << "Fahrenheit: " << fahrenheit << " F\n";
+	cout << "Kelvin:     " << kelvin << " K\n\n";
+	
+	cout << endl << endl;
+
+	cout << "Qualquer tecla para continuar...";
+	system("pause"); // somente no Windows
+	system("cls");
+
+	cout << "Exercicio 3 - Conversao de Segundos\n";
+	cout << "===================================\n";
+	long total_segundos = 0;
+
+	cout << "Digite a quantidade de segundos: ";
+	cin >> total_segundos;
+
+	
+	dias = total_segundos / 86400;
+	long resto_dias = total_segundos % 86400;
+
+	horas = resto_dias / 3600;
+	long resto_horas = resto_dias % 3600;
+
+	minutos = resto_horas / 60;
+	int segundos_restantes = resto_horas % 60; 
+
+	cout << "\nResultado do desmembramento:\n";
+	cout << "Dias:    " << dias << "\n";
+	cout << "Horas:   " << horas << "\n";
+	cout << "Minutos: " << minutos << "\n";
+	cout << "Segundos restantes: " << segundos_restantes << "\n\n";
+
 	cout << "Qualquer tecla para sair...";
 	system("pause"); // somente no Windows
-
-
 }
-
