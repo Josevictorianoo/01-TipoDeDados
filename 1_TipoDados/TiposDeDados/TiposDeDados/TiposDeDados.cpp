@@ -80,6 +80,19 @@ int main()
 	system("pause"); // somente no Windows
 	system("cls");
 
+	cout << "Exercicio 1 - Limite de tipo\n";
+	cout << "=================================\n";
+
+#include <climits>
+	cout << "int  max = " << INT_MAX << "\n";
+	cout << "int  min = " << INT_MIN << "\n";
+	cout << "short max = " << SHRT_MAX << "\n";
+	cout << "int max +1 = " << INT_MAX + 1LL << "\n";
+	
+	cout << "Qualquer tecla para continuar...";
+	system("pause"); // somente no Windows
+	system("cls");
+
 	cout << "\nExercicio 2 - Conversao de Temperatura\n";
 	cout << "======================================\n";
 	double celsius = 0.0;
@@ -124,6 +137,30 @@ int main()
 	cout << "Horas:   " << horas << "\n";
 	cout << "Minutos: " << minutos << "\n";
 	cout << "Segundos restantes: " << segundos_restantes << "\n\n";
+
+	cout << "Qualquer tecla para continuar...";
+	system("pause"); // somente no Windows
+	system("cls");
+
+	cout << "Exercicio 4 - Ponteiro na Pratica\n";
+	cout << "=================================\n";
+
+	int meu_numero = 42;
+
+
+	cout << "Valor original da variavel: " << meu_numero << "\n";
+
+
+	cout << "Endereco da variavel (&meu_numero): " << &meu_numero << "\n";
+
+	
+	int* pt_numero = &meu_numero;
+
+	
+	*pt_numero = *pt_numero * 2;
+
+	
+	cout << "Novo valor da variavel original (apos alteracao via ponteiro): " << meu_numero << "\n\n";
 
 	cout << "Qualquer tecla para sair...";
 	system("pause"); // somente no Windows
