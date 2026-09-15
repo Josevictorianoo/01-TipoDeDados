@@ -6,7 +6,7 @@ using namespace std;
 
 int main()
 {
-	cout << "Estrutura de Dados - Fatec (2026/1)" << endl;
+	cout << "Estrutura de Dados - Fatec (2026/2)" << endl;
 
 	
 	cout << "Tipos Numericos\n";
@@ -21,7 +21,6 @@ int main()
 	cout << "  int i = " << i << " ocupa " << sizeof(i) << " bytes\n";
 	cout << "short s = " << s << " ocupa " << sizeof(s) << " bytes\n";
 	cout << "long  l = " << l << " ocupa " << sizeof(l) << " bytes\n\n";
-	cout << "Ponto Flutuante (Reais)\n";
 	cout << " float f = " << f << " ocupa " << sizeof(f) << " bytes\n";
 	cout << "double d = " << d << " ocupa " << sizeof(d) << " bytes\n";
 
